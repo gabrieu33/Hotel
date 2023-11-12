@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="colorPrimary">#195073</item> <!-- Define a cor de fundo quando selecionado -->
+        <item name="itemTextColor">@color/white</item> <!-- Cor do texto não selecionado -->
+        <item name="itemIconTint">@color/white</item> <!-- Cor do ícone não selecionado -->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>
