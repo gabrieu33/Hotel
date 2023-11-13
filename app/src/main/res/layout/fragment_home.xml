@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.Home"
-    android:backgroundTint="@color/azul_principal"
-    android:background="@color/azul_principal">
+    android:background="@color/azul_secundario">
+
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pagina Inicial"
+        android:text="PAgina Inicial"
         android:textSize="26dp"
         android:layout_gravity="center"
         android:textColor="@color/white"/>
