@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "Login realizado com sucesso", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@MainActivity, TelaPrincipal::class.java)
                     startActivity(intent)
-                    finish() 
+                    finish()
                 } else {
                     try {
                         throw task.exception!!
