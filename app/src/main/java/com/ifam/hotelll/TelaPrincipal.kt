@@ -3,8 +3,6 @@ package com.ifam.hotelll
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.google.android.material.internal.NavigationMenu
-import com.ifam.hotelll.databinding.ActivityMainBinding
 import com.ifam.hotelll.databinding.TelaPrincipalAppBinding
 import com.ifam.hotelll.ui.buscar.Buscar
 import com.ifam.hotelll.ui.conta.Conta
@@ -27,7 +25,7 @@ class TelaPrincipal : AppCompatActivity() {
             when(menuItem.itemId) {
 
                 R.id.navigation_home -> replaceFragment(Home())
-                R.id.navigation_navegacao -> replaceFragment(Navegacao())
+                R.id.navigation_favoritos -> replaceFragment(Navegacao())
                 R.id.navigation_buscar -> replaceFragment(Buscar())
                 R.id.navigation_conta ->  replaceFragment(Conta())
                 // Adicione outros casos conforme necessário

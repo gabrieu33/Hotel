@@ -2,7 +2,7 @@
     <string name="app_name">Hotelll</string>
     <string name="title_activity_tela_principal">telaPrincipal</string>
     <string name="title_inicial">Pagina Inicial</string>
-    <string name="title_navegacao">Navegaçao</string>
+    <string name="title_favoritos">Favoritos</string>
     <string name="title_conta">Conta</string>
     <string name="title_buscar">Buscar</string>
     <!-- TODO: Remove or change this placeholder text -->

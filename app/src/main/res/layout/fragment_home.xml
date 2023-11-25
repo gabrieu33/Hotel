@@ -1,18 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.Home"
-    android:background="@color/azul_secundario">
+    tools:context=".ui.home.Home">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PAgina Inicial"
-        android:textSize="26dp"
-        android:layout_gravity="center"
-        android:textColor="@color/white"/>
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="412dp"
+            android:layout_height="191dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/textViewOla"
+                    android:layout_width="375dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Olá"
+                    android:textColor="@color/azul_principal"
+                    android:textSize="23sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="354dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="29dp"
+                    android:src="@drawable/hotellogo2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="309dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/azul_principal"
+            android:onClick="MostrarData"
+            android:text="Escolher uma data"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/btnlocal" />
+
+        <Button
+            android:id="@+id/btnlocal"
+            android:layout_width="309dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/azul_principal"
+            android:onClick="MostrarLocal"
+            android:text="Escolha um Local"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <Button
+            android:id="@+id/btnHospede"
+            android:layout_width="309dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/azul_principal"
+            android:onClick="MostrarHospedes"
+            android:text="Hospedes"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/btnData" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="47dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/perfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="47dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="47dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/hotel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="131dp"
+            android:backgroundTint="@color/azul_principal"
+            android:text="Buscar"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHospede" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

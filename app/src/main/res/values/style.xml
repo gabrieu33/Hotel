@@ -14,5 +14,16 @@
     <style name="circular_borda">
         <item name="cornerSize">50%</item>
 
+
     </style>
+    <style name="textlocal">
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="Statubar" parent="Theme.AppCompat.Light.DarkActionBar">
+       <!-- ... outras configurações de estilo ... -->
+        <item name="android:statusBarColor">@color/azul_principal</item>
+
+    </style>
+
 </resources>

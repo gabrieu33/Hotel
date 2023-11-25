@@ -7,9 +7,9 @@
         android:title="@string/title_inicial" />
 
     <item
-        android:id="@+id/navigation_navegacao"
-        android:icon="@drawable/navegar"
-        android:title="@string/title_navegacao" />
+        android:id="@+id/navigation_favoritos"
+        android:icon="@drawable/favorito"
+        android:title="@string/title_favoritos" />
     <item
         android:id="@+id/navigation_buscar"
         android:iconTint="@color/amarelo"
